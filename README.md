@@ -16,7 +16,7 @@ cat command (short for “concatenate”) lists the contents of files to the ter
 #### cd
 cd command changes your current directory
 ```
-change to your home directory
+# change to your home directory
 cd ~
 ```
 #### chmod
@@ -121,4 +121,24 @@ ls -lh
 # To include hidden files use the -a (all files) option:
 ls -lha
 
+```
+
+#### mkdir
+mkdir command allows you to create new directories in the filesystem
+```
+mkdir invoices
+
+mkdir invoices/2109            # to create new directory 2109 inside invoices
+
+mkdir -p quotes/yearly/2019    # to create all directory and subdirectory at once
+```
+
+#### shutdown
+shutdown with no parameters will shut down your computer in one minute
+```
+shutdown      # in one minute
+
+shutdown now  # immediately
+
+shutdown -c   # cancel shutdown sheduled say for some minutes
 ```
