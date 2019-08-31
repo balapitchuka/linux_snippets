@@ -1,7 +1,7 @@
 ## Shell Commands
 
 
-#### alias
+### alias
 
 The alias command lets you give your own name to a command or sequence of commands
 ```
@@ -11,16 +11,16 @@ alias pf="ps -e | grep $1"
 pf shutter
 ```
 
-#### cat
+### cat
 cat command (short for “concatenate”) lists the contents of files to the terminal window
 
-#### cd
+### cd
 cd command changes your current directory
 ```
 # change to your home directory
 cd ~
 ```
-#### chmod
+### chmod
 chmod command sets the file permissions flags on a file or folder
 ```
     0: No permission 
@@ -32,7 +32,7 @@ chmod command sets the file permissions flags on a file or folder
     6: Read and write permissions
     7: Read, write and execute permissions
 ```
-#### echo
+### echo
 echo command prints (echoes) a string of text to the terminal window
 ```
 echo A string of text
@@ -43,13 +43,13 @@ echo $HOME
 echo $PATH
 ```
 
-#### find
+### find
 find command to track down files
 
-#### finger
+### finger
 finger command gives you a short dump of information about a user, including the time of the user’s last login, the user’s home directory, and the user account’s full name
 
-#### free
+### free
 free command gives you a summary of the memory usage with your computer. It does this for both the main Random Access Memory (RAM) and swap memory.
 ```
 free    # in bytes
@@ -58,16 +58,16 @@ free -h   #(human) option is used to provide human-friendly numbers and units
 
 ```
 
-#### grep
+### grep
 The grep utility searches for lines which contain a search pattern.
 ```
 grep train *.txt
 ```
 
-#### groups
+### groups
 The groups command tells you which groups a user is a member of.
 
-#### gzip
+### gzip
 The gzip command compresses files. 
 By default, it removes the original file and leaves you with the compressed version. 
 To retain both the original and the compressed version, use the -k (keep) option.
@@ -75,7 +75,7 @@ To retain both the original and the compressed version, use the -k (keep) option
 gzip -k core.c  #k (keep)
 ```
 
-#### head
+### head
 The head command gives you a listing of the first 10 lines of a file.
 ```
 head core.c
@@ -83,7 +83,7 @@ head core.c
 head -n 5 core.c  # n(number)
 ```
 
-#### history
+### history
 history command lists the commands you have previously issued on the command line.
 ```
 history
@@ -96,7 +96,7 @@ history
 !!
 ```
 
-#### kill
+### kill
 The kill command allows you to terminate a process from the command line
 ```
 ps -e | grep shutter    #search for the shutter process and obtain its PID as follows
@@ -104,7 +104,7 @@ ps -e | grep shutter    #search for the shutter process and obtain its PID as fo
 kill 1692               # pid of shutter
 
 ```
-#### less
+### less
 less command allows you to view files without opening an editor.
 
 ### ls
@@ -124,7 +124,7 @@ ls -lha
 
 ```
 
-#### mkdir
+### mkdir
 mkdir command allows you to create new directories in the filesystem
 ```
 mkdir invoices
@@ -134,8 +134,8 @@ mkdir invoices/2109            # to create new directory 2109 inside invoices
 mkdir -p quotes/yearly/2019    # to create all directory and subdirectory at once
 ```
 
-#### rm  
-we can both files and directories using rm command
+### rm  
+we can remove both files and directories using rm command
 ```
 # removes file with name hello.txt
 rm hello.txt
@@ -170,7 +170,7 @@ rm -r dirname1 dirname2 dirname3
 
 ```
 
-#### shutdown
+### shutdown
 shutdown with no parameters will shut down your computer in one minute
 ```
 shutdown      # in one minute
