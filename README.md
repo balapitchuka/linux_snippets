@@ -134,6 +134,42 @@ mkdir invoices/2109            # to create new directory 2109 inside invoices
 mkdir -p quotes/yearly/2019    # to create all directory and subdirectory at once
 ```
 
+#### rm  
+we can both files and directories using rm command
+```
+    # removes file with name hello.txt
+    rm hello.txt
+    Note: If the file is write protected you will be prompted for confirmation.     
+        
+    # To remove all files with specific extension
+    rm *.pdf                    # removes all files with .pdf extension in current directory
+    
+    # To confirm each file before deleting it use, -i
+    rm -i hello.txt
+    
+    # To remove files without prompting even if the files are write-protected use, -f(force)
+     rm -f hello.txt
+    
+    # To remove all .txt files in the current directory without a prompt in verbose mode(-v).
+    rm -fv *.txt
+     
+    # To remove empty directory use , -d(directory)
+    rm -d hello    # removes directory with name hello
+    
+    # To remove non-empty directories and all the files within them use, -r(recursive)
+    rm -r hello
+    Note: If a directory or a file within the directory is write-protected, 
+          you will be prompted to confirm the deletion.
+    
+    # To remove non-empty directories and all the files without being prompted use, -f(force)
+    rm -rf hello
+    
+    # To remove multiple directories at once
+    rm -r dirname1 dirname2 dirname3
+    
+
+```
+
 #### shutdown
 shutdown with no parameters will shut down your computer in one minute
 ```
