@@ -1,6 +1,7 @@
 # Table Of Contents
 1. [Shell Commands](#shell_commands)
 2. [Linux Shells](#linux_shells)
+3. [Linux Networking](#networking)
 
 <a id='shell'></a>
 ## Shell Commands
@@ -213,3 +214,15 @@ shutdown -c   # cancel shutdown sheduled say for some minutes
 - **grep "^$USER" /etc/passwd** – Print the default shell name. The default shell runs when you open a terminal window.
 - **chsh -s /bin/ksh** – Change the shell used from /bin/bash (default) to /bin/ksh for your account
 - **echo $0** – Another reliable and simple method to get the current shell interpreter name on Linux or Unix-like systems.
+
+
+## Networking <a name="networking"> </a>
+
+### Get IP address of domain using domain name
+- Windows OS:
+	- `nslookup  myfirstrecord.stephanetheteacher.com`
+
+- Dig deeper into domain
+    - Macos/linux
+	    - `dig myfirstrecord.stephanetheteacher.com`
+
